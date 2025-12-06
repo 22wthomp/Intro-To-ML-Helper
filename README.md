@@ -1,6 +1,6 @@
 # Machine Learning Pipeline Dashboard
 Interactive, beginner-friendly dashboard for exploring end-to-end machine learning pipelines without writing code.
-![Dashboard preview](Images/ml_pipeline1.png)
+![Dashboard preview](Images/ml_pipline1.png)
 # Overview
 This project is a **Dash based web app** that lets you build, train, and evaluate machine learning models through an interactive dashboard.
 
@@ -51,11 +51,11 @@ You upload a CSV, pick your target column, customize your preprocessing (split r
   - ℹ️ icons next to metrics, graphs, scalers,hyperparameters and models show friendly explanations and examples (e.g., what AUC means, how MAPE is interpreted, why scaling matters).
 ## Screenshots
 ### Upload & Configuration
-![Upload and configuration](Images/ml_pipeline1.png)
+![Upload and configuration](Images/ml_pipline1.png)
 ## Hyperparameter Tuning
-![Hyperparameter Tuning](Images/ml_pipeline2.png)
+![Hyperparameter Tuning](Images/ml_pipline2.png)
 ### Classification Results 
-![Classification results](Images/ml_pipeline.png)
+![Classification results](Images/ml_pipeline.3.png)
 ## Supported Models & Metrics
 **Classification**
 Classification Models (via scikit-learn & XGBoost):
