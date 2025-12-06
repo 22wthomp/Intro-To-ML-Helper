@@ -7,7 +7,7 @@ It started as an education project for me to:
 - Practice building ML Pipelines
 - Applying topics I learned in class to an actual project
 - Create a tool that helps people new to machine learning experimnt with different models, metrics and visualizations without touching code.
-You upload a CSV, pick your target column, customize your preprocessing (split ratio, inclusion of validation set), choose Classification or Regression, select one or more models, optionally apply feature scaling or adjust parameters.
+- You upload a CSV, pick your target column, customize your preprocessing (split ratio, inclusion of validation set), choose Classification or Regression, select one or more models, optionally apply feature scaling or adjust parameters.
 ## Key Features
 - **CSV Upload**
   - Upload a single CSV file with a header row
@@ -56,8 +56,8 @@ You upload a CSV, pick your target column, customize your preprocessing (split r
 ### Classification Results 
 ![Classification results](Images/ml_pipeline.3.png)
 ## Supported Models & Metrics
-**Classification**
-Classification Models (via scikit-learn & XGBoost):
+- **Classification**
+- Classification Models (via scikit-learn & XGBoost):
   - Logistic Regression (logreg)
   - Random Forest Classifier (rf)
   - Support Vector Classifier (svc)
@@ -65,7 +65,7 @@ Classification Models (via scikit-learn & XGBoost):
   - Gaussian Naive Bayes (nb)
   - AdaBoost Classifier (adac)
   - XGBoost Classifier (xgbc)
-**Classification Metrics**
+- **Classification Metrics**
 - For each model, the app computes metrics on test (and optionally validation) data:
   - Accuracy
   - Precision
@@ -73,7 +73,7 @@ Classification Models (via scikit-learn & XGBoost):
   - F1 Score
   - AUC (Area Under the ROC Curve)
 - These metrics are displayed in a table with rows for Test and Validation and each metric has an explanatory tooltip
-**Classification Plots**
+- **Classification Plots**
   - Confusion Matrix Heatmap
     - Shows how often each class was correctly or incorrectly predicted
     - Dark diagonal = good; off-diagonal cells show where the model is confused.
@@ -83,7 +83,7 @@ Classification Models (via scikit-learn & XGBoost):
   - Multicalss ROC
     - One-vs-rest ROC curves for each class, useful to see which classes are easier or harder to distinguish
   - Feature Importance Bar Chart
-**Regression**
+- **Regression**
 - Regression Models (via scikit-learn & XGBoost):
   - Linear Regression (linreg)
   - Ridge Regression (ridge)
@@ -178,7 +178,7 @@ Classification Models (via scikit-learn & XGBoost):
         - A metrics table for test (and validation, if enabled)
         - Relevant plots (confusion matrix, ROC/multiclass ROC, feature importance, predicted vs actual, residuals, residual histogram)
       - Use tooltips and visual diagnostics to learn how different models behave
-**Internal Pipeline**
+- **Internal Pipeline**
 - CSV -> validation checks -> split -> per-model scaling -> train -> predict -> evaluate -> visualize
 ## Educational Notes
 This dashboard is designed as a learning tool:
