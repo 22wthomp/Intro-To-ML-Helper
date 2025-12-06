@@ -1,5 +1,5 @@
 # Machine Learning Pipeline Dashboard
-Interactive, beginner-friendly dashboard for exploring end-to-end machine learning pipelines without writing code.
+Beginner friendly dashboard for exploring machine learning pipelines without writing code.
 ![Dashboard preview](Images/ml_pipline1.png)
 # Overview
 This project is a **Dash based web app** that lets you build, train, and evaluate machine learning models through an interactive dashboard.
