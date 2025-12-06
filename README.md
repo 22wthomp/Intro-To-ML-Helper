@@ -7,7 +7,7 @@ It started as an education project for me to:
 - Practice building ML Pipelines
 - Applying topics I learned in class to an actual project
 - Create a tool that helps people new to machine learning experimnt with different models, metrics and visualizations without touching code.
-You upload a CSV, pick your target column, customize your preprocessing (split ratio, inclusion of validation set), choose Classification or Regression, select one or more models, optionally apply feature scaling or adjust parameters.
+- You upload a CSV, pick your target column, customize your preprocessing (split ratio, inclusion of validation set), choose Classification or Regression, select one or more models, optionally apply feature scaling or adjust parameters.
 ## Key Features
 - **CSV Upload**
   - Upload a single CSV file with a header row
