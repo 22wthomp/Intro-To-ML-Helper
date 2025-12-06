@@ -1,5 +1,6 @@
 # Machine Learning Pipeline Dashboard
 Interactive, beginner-friendly dashboard for exploring end-to-end machine learning pipelines without writing code.
+![Dashboard preview](Images/ml_pipeline1.png)
 # Overview
 This project is a **Dash based web app** that lets you build, train, and evaluate machine learning models through an interactive dashboard.
 
@@ -48,6 +49,13 @@ You upload a CSV, pick your target column, customize your preprocessing (split r
   - All plots are rendered with Plotly inside the dashboard (and therefore can be adjusted for better visualization).
 - **Educational Tooltips**
   - ℹ️ icons next to metrics, graphs, scalers,hyperparameters and models show friendly explanations and examples (e.g., what AUC means, how MAPE is interpreted, why scaling matters).
+## Screenshots
+### Upload & Configuration
+![Upload and configuration](Images/ml_pipeline1.png)
+## Hyperparameter Tuning
+![Hyperparameter Tuning](Images/ml_pipeline2.png)
+### Classification Results 
+![Classification results](Images/ml_pipeline.png)
 ## Supported Models & Metrics
 **Classification**
 Classification Models (via scikit-learn & XGBoost):
@@ -102,7 +110,7 @@ Classification Models (via scikit-learn & XGBoost):
     - Random scatter around zero suggests a good fit; patterns may indicate bias or missing structure in the model
   - Residuals Histogram
     - Distribution of residuals to check if errors are centered near zero and roughly symmetric
-##**Tech Stack**
+## Tech Stack
   - Language: Python
   - Web Framework: Dash
   - Visualization: Plotly (Graph Object)
@@ -111,7 +119,7 @@ Classification Models (via scikit-learn & XGBoost):
     - scikit-learn (models, metics, train'test split, scalers)
     - XGBoost(XGBClassifier, XGBRegressor)
   - Runs as a local web app in your browser served by Dash on localhost:8051
-##**Installation**
+## Installation
 1. Clone the repository
    - git clone https://github.com/22wthomp/Intro-To-ML-Helper.git
    - cd ml-pipeline-dashboard
@@ -131,7 +139,7 @@ Classification Models (via scikit-learn & XGBoost):
 - `data/` – Example datasets (recommended)
 - `requirements.txt` – Project dependencies
 
-##**How to Use**
+## How to Use
 1. Start the dashboard
   - from the project root:
     - python ml.pipline.py
@@ -163,7 +171,7 @@ Classification Models (via scikit-learn & XGBoost):
         - Pick a feature scaler (None / Standard / MinMax / Robust / MaxAbs) or keep the default.
   7. Run the Pipeline
       - Click the Run Button
-      - A “Training models, please wait…” message appears while models are training.
+      - A “Training models, please wait...” message appears while models are training.
       - The app validates the dataset (missing values & numeric checks for regression), splits the data, scales features per model, trains each model, computes metrics, and generates plots.
   8. Interpret the Outputs
       - At the bottom, under “Data Info”, confirm your target choice and split sizes
@@ -179,8 +187,8 @@ This dashboard is designed as a learning tool:
 - Experiment with per model scaling to understand when preprocessing matters.
 - Interpret visual diagnostics like ROC curves and residual plots to understand model behavior, not just scores.
 
-##**Current Limitation & Future Work**
-- Current Limitations
+## Current Limitation & Future Work 
+- **Current Limitations**
 - Based strictly on current code:
   - Data Cleaning Assumptions
     - The app checks for missing values and for non-numeric columns when performing regression. If issues are found, it reports them and refuses to run.
@@ -194,9 +202,8 @@ This dashboard is designed as a learning tool:
     - Model Tuning
       - Hyperparameters are configurable, but there is no automatic hyperparameter search (ex. GridSearchCV/RandomizedSearchCV)
       - Defaults are reasonable general purpose settings, but not tuned for any specific dataset.
-- Some Ideas To Add to this Project
+- **Some Ideas To Add to this Project**
   - Prettyify General Application Look
-  - Configurable random states for reproducibility
   - Implement a Hyperparameter search (grid/random search) with visualizations of results
   - Allow saving and loading trained models/pipes
   - Add dataset preview
@@ -205,4 +212,7 @@ This dashboard is designed as a learning tool:
   - Add more graphs with the option to select which are displayed
   - Run different sets of models side by side
   - Add categorical encoding + missing value imputation
-  
+## Datasets
+
+The example datasets used in this project are publicly available and were obtained from free sources. They are included only for educational/demo purposes and are not my original datasets.
+
