@@ -3,7 +3,6 @@ Beginner friendly dashboard for exploring machine learning pipelines without wri
 ![Dashboard preview](Images/ml_pipline1.png)
 # Overview
 This project is a **Dash based web app** that lets you build, train, and evaluate machine learning models through an interactive dashboard.
-
 It started as an education project for me to:
 - Practice building ML Pipelines
 - Applying topics I learned in class to an actual project
@@ -15,16 +14,16 @@ You upload a CSV, pick your target column, customize your preprocessing (split r
 - **Target Column Selection**
   - Type the name of the target column
   - If left blank the dashboard automatically uses the last column in th edataset as the target.
--**Configurable Train/Test Split**
+- **Configurable Train/Test Split**
   - Choose the train/test ratio (70/30, 75/25, 80/20, 90/10)
   - Data is split into train and test sets using sckit-learn's train_test_split
--**Optional Validation Set**
+- **Optional Validation Set**
   - Check a box to create a validation set (20% of the training portion)
 - **Classification or Regression Mode**
   - Switch between
     - Classification
     - Regression
-  -The list of available models updates automatically based on the chosen task
+  - The list of available models updates automatically based on the chosen task
 - **Multiple Models in One Run**
   - Select one or more models at the same time via a checklist
   - The app trains and evaluates each selected model and shows results one after another
@@ -67,13 +66,13 @@ Classification Models (via scikit-learn & XGBoost):
   - AdaBoost Classifier (adac)
   - XGBoost Classifier (xgbc)
 **Classification Metrics**
--For each model, the app computes metrics on test (and optionally validation) data:
+- For each model, the app computes metrics on test (and optionally validation) data:
   - Accuracy
   - Precision
   - Recall
   - F1 Score
   - AUC (Area Under the ROC Curve)
--These metrics are displayed in a table with rows for Test and Validation and each metric has an explanatory tooltip
+- These metrics are displayed in a table with rows for Test and Validation and each metric has an explanatory tooltip
 **Classification Plots**
   - Confusion Matrix Heatmap
     - Shows how often each class was correctly or incorrectly predicted
@@ -130,7 +129,7 @@ Classification Models (via scikit-learn & XGBoost):
     - macOS / Linux
       - source .venv/bin/activate
 3. Install dependicies
-   -pip install -r requirements.txt
+   - pip install -r requirements.txt
    - (The project relies on Dash, Plotly, Pandas, NumPy, scikit-learn, XGBoost, etc., which should all be listed in requirements.txt.)
    
 ## Repository Structure
